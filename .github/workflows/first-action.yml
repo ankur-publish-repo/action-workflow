@@ -6,5 +6,13 @@ jobs:
     steps:
       - name: Print Helo
         run: echo "Hello world"
+      - name: Run multi line code
+        run: |
+            echo "First Output"
+            echo "First Output"
+            uname -r
+            free -gh
+            
       - name:  Print Goodbye
         run: echo "Goodbye !!!!"
+
